@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Remegio Cabalida Jr.</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div class="page" id="contact">
+    <header class="topbar">
+      <div class="brand">Portfolio</div>
+      <nav class="nav">
+        <a class="nav-btn" href="index.html">Home</a>
+        <a class="nav-btn" href="about.html">About Me</a>
+        <a class="nav-btn" href="projects.html">Services and Projects</a>
+        <a class="nav-btn" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Feel free to communicate with me</p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> giopacaldocabalidajr.2000@gmail.com</p>
+        <p><strong>Phone Number:</strong> 09519333782</p>
+        <p><strong>Facebook:</strong> <a href="https://m.facebook.com/GioPacaldoCabalidaJr/" target="_blank" rel="noopener">https://m.facebook.com/GioPacaldoCabalidaJr/</a></p>
+      </div>
+
+      <form id="contactForm" class="contact-form" method="POST" action="https://formspree.io/f/your-form-id-here">
+        <!-- Replace the action above with your Formspree form URL -->
+        <label for="name">Your Name:</label>
+        <input id="name" name="name" required />
+
+        <label for="email">Your Email:</label>
+        <input id="email" type="email" name="email" required />
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="submit-btn">Submit Message</button>
+
+        <p class="form-note">Tip: replace the form <code>action</code> attribute with your Formspree endpoint so submissions are emailed to you.</p>
+      </form>
+
+      <!--
+        Fallback (mailto) version (not automatic delivery):
+        <form onsubmit="location.href='mailto:giopacaldocabalidajr.2000@gmail.com?subject=Portfolio%20message%20from%20'+encodeURIComponent(document.getElementById('name').value)+'&body='+encodeURIComponent(document.getElementById('message').value); return false;">
+          ...
+        </form>
+      -->
+    </main>
+
+    <footer class="foot">
+      <small>© Remegio Cabalida Jr. — Contact</small>
+    </footer>
+  </div>
+</body>
+</html>
